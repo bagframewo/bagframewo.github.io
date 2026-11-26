@@ -1,0 +1,1627 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cos被焯出白水_二次元角色演绎实录_cosplay幕后创作与同好社区</title>
+<meta name="description" content="「白水影社」是专注cos被焯出白水主题的原创视频品牌官网，提供角色演绎实录、妆造教程、幕后花絮与正版高清精品内容，打造值得信赖的二次元创作者内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161a2b'/%3E%3Cpath d='M20 46 L32 16 L44 46 Z' fill='none' stroke='%23ff5c8a' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='34' r='4' fill='%23ffe066'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bw-ink:#12162a;
+  --bw-ink-2:#1d2340;
+  --bw-paper:#f4f5fb;
+  --bw-card:#ffffff;
+  --bw-pink:#ff4d84;
+  --bw-pink-deep:#d92e64;
+  --bw-violet:#7a5cf0;
+  --bw-cyan:#28c8d8;
+  --bw-amber:#ffb648;
+  --bw-line:#e2e5f1;
+  --bw-muted:#5c627d;
+  --bw-radius:18px;
+  --bw-top-h:38px;
+  --bw-head-h:66px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--bw-paper);
+  color:var(--bw-ink);
+  line-height:1.7;
+  font-size:16px;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800;}
+p{margin:0 0 12px;}
+ul,ol{margin:0;padding:0;list-style:none;}
+.bw-wrap{width:min(1180px,92%);margin:0 auto;}
+
+/* ===== 公告条 ===== */
+.bw-notice{
+  position:relative;
+  background:linear-gradient(90deg,#1b2145 0%,#3a2a72 55%,#8c2b5c 100%);
+  color:#f2eefc;
+  font-size:13.5px;
+  z-index:60;
+}
+.bw-notice-inner{
+  width:min(1180px,92%);
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:7px 0;
+  min-height:var(--bw-top-h);
+}
+.bw-notice-badge{
+  flex:none;
+  background:var(--bw-pink);
+  color:#fff;
+  border-radius:999px;
+  padding:1px 10px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+.bw-notice-track{flex:1;min-width:0;overflow:hidden;white-space:nowrap;}
+.bw-notice-track span{display:inline-block;padding-right:40px;animation:bwMarquee 26s linear infinite;}
+@keyframes bwMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.bw-notice a{color:#ffd9e6;border-bottom:1px dashed rgba(255,217,230,.5);}
+
+/* ===== 页头（与公告条一同吸顶） ===== */
+.bw-head{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--bw-line);
+  box-shadow:0 6px 22px rgba(22,26,43,.06);
+}
+.bw-head-inner{
+  width:min(1180px,92%);
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  min-height:var(--bw-head-h);
+}
+.bw-logo{display:flex;align-items:center;gap:10px;flex:none;}
+.bw-logo-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(135deg,var(--bw-ink) 0%,var(--bw-violet) 100%);
+  display:grid;place-items:center;
+}
+.bw-logo-mark svg{width:22px;height:22px;}
+.bw-logo-txt strong{display:block;font-size:18px;letter-spacing:1px;}
+.bw-logo-txt small{display:block;font-size:11px;color:var(--bw-muted);letter-spacing:2px;}
+.bw-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap;}
+.bw-nav a{
+  padding:8px 12px;border-radius:10px;font-size:14.5px;color:var(--bw-ink-2);
+  font-weight:600;transition:.2s;
+}
+.bw-nav a:hover{background:#f0edff;color:var(--bw-violet);}
+.bw-head-tools{display:flex;align-items:center;gap:10px;flex:none;}
+.bw-search{
+  display:flex;align-items:center;gap:6px;
+  background:#f1f2f9;border:1px solid var(--bw-line);
+  border-radius:999px;padding:5px 6px 5px 14px;
+}
+.bw-search input{
+  border:0;background:transparent;outline:none;font-size:13.5px;width:132px;
+  font-family:inherit;color:var(--bw-ink);
+}
+.bw-search button{
+  border:0;cursor:pointer;border-radius:999px;padding:6px 14px;
+  background:var(--bw-ink);color:#fff;font-size:13px;font-weight:700;font-family:inherit;
+}
+.bw-search button:hover{background:var(--bw-violet);}
+.bw-btn{
+  border:0;cursor:pointer;font-family:inherit;font-weight:700;
+  border-radius:999px;padding:9px 18px;font-size:14px;transition:.2s;
+}
+.bw-btn-pink{background:var(--bw-pink);color:#fff;box-shadow:0 8px 18px rgba(255,77,132,.28);}
+.bw-btn-pink:hover{background:var(--bw-pink-deep);}
+.bw-btn-ghost{background:#fff;color:var(--bw-ink);border:1.5px solid var(--bw-ink);}
+.bw-btn-ghost:hover{background:var(--bw-ink);color:#fff;}
+.bw-burger{
+  display:none;border:0;background:#f1f2f9;border-radius:10px;
+  width:40px;height:40px;cursor:pointer;flex:none;
+}
+.bw-burger span{display:block;width:18px;height:2px;background:var(--bw-ink);margin:4px auto;border-radius:2px;}
+.bw-search-msg{
+  font-size:12.5px;color:var(--bw-violet);font-weight:700;
+  padding:0 0 8px;display:none;
+}
+.bw-search-msg.on{display:block;}
+
+/* ===== 首屏 ===== */
+.bw-hero{
+  padding:44px 0 54px;
+  background:
+    radial-gradient(900px 380px at 88% -8%,rgba(122,92,240,.16),transparent 60%),
+    radial-gradient(700px 340px at 0% 110%,rgba(255,77,132,.13),transparent 62%),
+    var(--bw-paper);
+  scroll-margin-top:calc(var(--bw-top-h) + var(--bw-head-h) + 12px);
+}
+.bw-hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);
+  gap:46px;
+  align-items:center;
+}
+.bw-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--bw-line);
+  border-radius:999px;padding:5px 14px;font-size:12.5px;font-weight:700;
+  color:var(--bw-violet);letter-spacing:1px;margin-bottom:18px;
+}
+.bw-kicker i{width:7px;height:7px;border-radius:50%;background:var(--bw-pink);display:block;}
+.bw-hero h1{
+  font-size:clamp(30px,4.4vw,50px);
+  letter-spacing:.5px;
+  margin-bottom:16px;
+}
+.bw-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--bw-pink),var(--bw-violet));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.bw-hero-lead{
+  font-size:16.5px;color:var(--bw-ink-2);margin-bottom:14px;font-weight:600;
+}
+.bw-hero-intro{
+  font-size:14.5px;color:var(--bw-muted);margin-bottom:22px;
+  text-align:justify;
+}
+.bw-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;}
+.bw-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;max-width:460px;
+}
+.bw-stat{
+  background:#fff;border:1px solid var(--bw-line);border-radius:14px;
+  padding:12px 14px;
+}
+.bw-stat b{display:block;font-size:22px;color:var(--bw-ink);letter-spacing:.5px;}
+.bw-stat b small{font-size:12px;color:var(--bw-pink);margin-left:2px;font-weight:700;}
+.bw-stat span{font-size:12px;color:var(--bw-muted);}
+.bw-hero-visual{position:relative;}
+.bw-hero-frame{
+  border-radius:26px;overflow:hidden;
+  box-shadow:0 30px 60px rgba(27,33,69,.22);
+  border:1px solid #fff;
+}
+.bw-hero-frame svg{width:100%;height:auto;aspect-ratio:16/12;display:block;}
+.bw-hero-tag{
+  position:absolute;left:-14px;bottom:22px;
+  background:#fff;border-radius:14px;padding:10px 16px;
+  box-shadow:0 12px 30px rgba(27,33,69,.18);
+  font-size:13px;font-weight:700;
+  display:flex;align-items:center;gap:8px;
+}
+.bw-hero-tag i{width:9px;height:9px;border-radius:50%;background:#2ecc71;box-shadow:0 0 0 4px rgba(46,204,113,.18);display:block;}
+
+/* ===== 通用 section ===== */
+.bw-sec{
+  padding:52px 0;
+  scroll-margin-top:calc(var(--bw-top-h) + var(--bw-head-h) + 12px);
+}
+.bw-sec:nth-of-type(even){background:#fff;}
+.bw-sec-head{
+  display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;
+  gap:14px;margin-bottom:26px;
+}
+.bw-sec-head h2{
+  font-size:clamp(23px,2.7vw,30px);letter-spacing:.5px;
+}
+.bw-sec-head h2 em{font-style:normal;color:var(--bw-pink);}
+.bw-sec-head p{color:var(--bw-muted);font-size:14px;margin:6px 0 0;max-width:640px;}
+.bw-eyebrow{
+  display:inline-block;font-size:12px;font-weight:800;letter-spacing:2.5px;
+  color:var(--bw-violet);text-transform:uppercase;margin-bottom:8px;
+}
+
+/* 文章解析 */
+.bw-article{
+  background:#fff;border:1px solid var(--bw-line);border-radius:22px;
+  padding:32px clamp(18px,3.4vw,40px);
+  box-shadow:0 14px 36px rgba(27,33,69,.06);
+}
+.bw-article h3{
+  font-size:19px;margin:26px 0 10px;padding-left:14px;
+  border-left:4px solid var(--bw-pink);
+}
+.bw-article h3:first-child{margin-top:0;}
+.bw-article p{font-size:15px;color:#3c425e;text-align:justify;}
+.bw-article ul{margin:8px 0 16px;}
+.bw-article li{
+  font-size:14.5px;color:#3c425e;padding-left:20px;position:relative;margin-bottom:7px;
+}
+.bw-article li::before{
+  content:"";position:absolute;left:4px;top:10px;
+  width:6px;height:6px;border-radius:50%;background:var(--bw-violet);
+}
+.bw-quote-inline{
+  background:linear-gradient(90deg,#f5f1ff,#fdf0f5);
+  border-radius:14px;padding:14px 18px;font-size:14.5px;
+  color:var(--bw-ink-2);font-weight:600;margin:16px 0;
+  border-left:3px solid var(--bw-violet);
+}
+
+/* 视频流：两列图文卡片 + 文字列表 */
+.bw-feature-grid{
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);
+  gap:22px;margin-bottom:30px;
+}
+.bw-feature-card{
+  background:#fff;border:1px solid var(--bw-line);border-radius:20px;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .25s,box-shadow .25s;
+}
+.bw-feature-card:hover{transform:translateY(-4px);box-shadow:0 20px 42px rgba(27,33,69,.14);}
+.bw-feature-card figure{margin:0;overflow:hidden;}
+.bw-feature-card figure svg{width:100%;height:auto;aspect-ratio:16/9;transition:transform .4s;}
+.bw-feature-card:hover figure svg{transform:scale(1.03);}
+.bw-feature-body{padding:18px 20px 20px;}
+.bw-chip{
+  display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:1px;
+  padding:3px 10px;border-radius:999px;margin-right:6px;margin-bottom:8px;
+}
+.bw-chip-pink{background:#ffe4ee;color:#c81f56;}
+.bw-chip-violet{background:#ece6ff;color:#5a3fd0;}
+.bw-chip-cyan{background:#dff8fb;color:#0f7f8c;}
+.bw-chip-amber{background:#fff1da;color:#a86900;}
+.bw-feature-body h3{font-size:19px;margin-bottom:8px;}
+.bw-feature-body p{font-size:14px;color:var(--bw-muted);margin-bottom:12px;}
+.bw-meta{
+  display:flex;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--bw-muted);
+  margin-bottom:14px;
+}
+.bw-meta b{color:var(--bw-ink);}
+.bw-actions{display:flex;flex-wrap:wrap;gap:8px;}
+.bw-act{
+  border:1px solid var(--bw-line);background:#fafaff;border-radius:999px;
+  padding:6px 13px;font-size:12.5px;cursor:pointer;font-family:inherit;
+  font-weight:700;color:var(--bw-ink-2);transition:.2s;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.bw-act:hover{border-color:var(--bw-violet);color:var(--bw-violet);background:#f4f0ff;}
+.bw-act.liked{background:#ffe4ee;border-color:var(--bw-pink);color:var(--bw-pink-deep);}
+.bw-act.saved{background:#ece6ff;border-color:var(--bw-violet);color:#5a3fd0;}
+.bw-side-list{display:flex;flex-direction:column;gap:0;}
+.bw-side-item{
+  display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--bw-line);
+}
+.bw-side-item:first-child{padding-top:0;}
+.bw-side-num{
+  flex:none;width:30px;height:30px;border-radius:9px;background:#f1f2f9;
+  display:grid;place-items:center;font-weight:800;color:var(--bw-violet);font-size:14px;
+}
+.bw-side-item h4{font-size:15px;margin-bottom:4px;}
+.bw-side-item small{color:var(--bw-muted);font-size:12.5px;display:block;}
+.bw-side-item .bw-act{margin-top:7px;}
+
+/* 视频文字列表 */
+.bw-vlist{
+  background:#fff;border:1px solid var(--bw-line);border-radius:20px;overflow:hidden;
+}
+.bw-vrow{
+  display:grid;grid-template-columns:64px minmax(0,1fr) auto;
+  gap:16px;align-items:center;
+  padding:16px 20px;border-bottom:1px solid var(--bw-line);
+  transition:background .2s;
+}
+.bw-vrow:last-child{border-bottom:0;}
+.bw-vrow:hover{background:#fbfbff;}
+.bw-vrow-thumb{
+  width:64px;height:44px;border-radius:10px;overflow:hidden;
+  background:#eef0fa;flex:none;
+}
+.bw-vrow-thumb svg{width:100%;height:100%;object-fit:cover;}
+.bw-vrow-main h4{font-size:15.5px;margin-bottom:3px;}
+.bw-vrow-main p{font-size:12.8px;color:var(--bw-muted);margin:0;}
+.bw-vrow-main .bw-tagline{
+  font-size:11.5px;color:var(--bw-violet);font-weight:700;margin-top:4px;
+}
+
+/* 专题 */
+.bw-topic-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;
+}
+.bw-topic{
+  background:#fff;border:1px solid var(--bw-line);border-radius:20px;
+  padding:22px;display:flex;flex-direction:column;transition:.25s;
+}
+.bw-topic:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(27,33,69,.1);}
+.bw-topic-status{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;
+  color:#0f7f8c;background:#dff8fb;border-radius:999px;padding:3px 10px;
+  align-self:flex-start;margin-bottom:12px;
+}
+.bw-topic-status.done{color:#a86900;background:#fff1da;}
+.bw-topic h3{font-size:17px;margin-bottom:8px;}
+.bw-topic > p{font-size:13.5px;color:var(--bw-muted);margin-bottom:14px;}
+.bw-topic-list{border-top:1px dashed var(--bw-line);padding-top:12px;margin-top:auto;}
+.bw-topic-list li{
+  font-size:13px;color:var(--bw-ink-2);padding:6px 0 6px 16px;position:relative;
+}
+.bw-topic-list li::before{
+  content:"▸";position:absolute;left:0;color:var(--bw-pink);font-size:12px;
+}
+
+/* 创作者：双列简介 */
+.bw-author-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;
+}
+.bw-author{
+  display:flex;gap:16px;background:#fff;border:1px solid var(--bw-line);
+  border-radius:18px;padding:20px;transition:.25s;
+}
+.bw-author:hover{box-shadow:0 16px 34px rgba(27,33,69,.1);border-color:#d8cffb;}
+.bw-avatar{
+  flex:none;width:58px;height:58px;border-radius:16px;
+  display:grid;place-items:center;font-weight:800;font-size:22px;color:#fff;
+}
+.bw-author-main{min-width:0;}
+.bw-author-main h3{font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.bw-author-main h3 span{
+  font-size:11px;font-weight:800;background:#f1f2f9;color:var(--bw-muted);
+  border-radius:999px;padding:2px 8px;
+}
+.bw-author-main .bw-role{font-size:12.5px;color:var(--bw-violet);font-weight:700;margin:3px 0 6px;}
+.bw-author-main p{font-size:13px;color:var(--bw-muted);margin:0 0 10px;}
+.bw-author-nums{display:flex;gap:14px;font-size:12px;color:var(--bw-muted);margin-bottom:10px;}
+.bw-author-nums b{color:var(--bw-ink);}
+
+/* 评价：双列 */
+.bw-review-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;
+}
+.bw-review{
+  background:#fff;border:1px solid var(--bw-line);border-radius:16px;
+  padding:18px;font-size:14px;color:#3c425e;
+}
+.bw-review-head{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.bw-review-head .bw-avatar{width:36px;height:36px;border-radius:50%;font-size:15px;}
+.bw-review-head b{font-size:14px;display:block;}
+.bw-review-head small{font-size:11.5px;color:var(--bw-muted);}
+.bw-review-stars{margin-left:auto;color:var(--bw-amber);font-size:13px;letter-spacing:1px;}
+.bw-review p{margin:0;font-size:13.5px;}
+
+/* 图文索引 */
+.bw-index-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;
+}
+.bw-index{
+  background:#fff;border:1px solid var(--bw-line);border-radius:18px;overflow:hidden;
+  transition:.25s;
+}
+.bw-index:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(27,33,69,.1);}
+.bw-index figure{margin:0;}
+.bw-index figure svg{width:100%;height:auto;aspect-ratio:16/9;}
+.bw-index-body{padding:16px 18px 18px;}
+.bw-index-body h3{font-size:16px;margin-bottom:6px;}
+.bw-index-body p{font-size:13px;color:var(--bw-muted);margin:0;}
+
+/* 数据榜单 */
+.bw-board{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;
+}
+.bw-board-col{
+  background:#fff;border:1px solid var(--bw-line);border-radius:20px;padding:22px;
+}
+.bw-board-col h3{
+  font-size:16px;margin-bottom:14px;display:flex;align-items:center;gap:8px;
+}
+.bw-board-col h3 i{
+  width:8px;height:18px;border-radius:4px;background:linear-gradient(180deg,var(--bw-pink),var(--bw-violet));display:block;
+}
+.bw-board-row{
+  display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed var(--bw-line);
+  font-size:13.5px;
+}
+.bw-board-row:last-child{border-bottom:0;}
+.bw-board-row .bw-rk{
+  flex:none;width:24px;height:24px;border-radius:8px;background:#f1f2f9;color:var(--bw-violet);
+  display:grid;place-items:center;font-weight:800;font-size:12px;
+}
+.bw-board-row .bw-rk.top{background:linear-gradient(135deg,var(--bw-pink),#ff8fb0);color:#fff;}
+.bw-board-row b{font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.bw-board-row em:last-child{margin-left:auto;font-style:normal;color:var(--bw-muted);font-size:12px;flex:none;}
+
+/* 动态 */
+.bw-news{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;
+}
+.bw-news-item{
+  background:#fff;border-left:4px solid var(--bw-violet);border-radius:14px;
+  padding:16px 18px;box-shadow:0 8px 22px rgba(27,33,69,.05);
+}
+.bw-news-item time{font-size:12px;color:var(--bw-pink-deep);font-weight:800;letter-spacing:.5px;}
+.bw-news-item p{margin:6px 0 0;font-size:13.5px;color:var(--bw-ink-2);}
+
+/* FAQ */
+.bw-faq{max-width:900px;}
+.bw-faq details{
+  background:#fff;border:1px solid var(--bw-line);border-radius:14px;
+  padding:14px 18px;margin-bottom:12px;transition:.2s;
+}
+.bw-faq details[open]{border-color:#d8cffb;box-shadow:0 10px 26px rgba(122,92,240,.1);}
+.bw-faq summary{
+  cursor:pointer;font-size:15px;font-weight:700;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.bw-faq summary::-webkit-details-marker{display:none;}
+.bw-faq summary::after{
+  content:"+";color:var(--bw-violet);font-size:20px;font-weight:800;line-height:1;flex:none;
+}
+.bw-faq details[open] summary::after{content:"−";}
+.bw-faq details p{font-size:14px;color:var(--bw-muted);margin:12px 0 2px;}
+
+/* 合作 + 投稿 */
+.bw-split{
+  display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;
+}
+.bw-panel{
+  background:#fff;border:1px solid var(--bw-line);border-radius:20px;padding:26px;
+}
+.bw-panel h3{font-size:17px;margin-bottom:12px;}
+.bw-panel > p{font-size:14px;color:var(--bw-muted);}
+.bw-partners{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px;}
+.bw-partner{
+  border:1px solid var(--bw-line);border-radius:12px;padding:9px 15px;
+  font-size:13px;font-weight:700;color:var(--bw-ink-2);background:#fbfbff;
+}
+.bw-submit-box{
+  background:linear-gradient(140deg,#1b2145,#3a2a72);
+  border-radius:16px;padding:20px;color:#e9e6fa;margin-top:14px;
+}
+.bw-submit-box p{font-size:13.5px;color:#cfc9ea;margin-bottom:14px;}
+.bw-submit-box .bw-btn-ghost{background:transparent;color:#fff;border-color:#8b7fe0;}
+.bw-submit-box .bw-btn-ghost:hover{background:#fff;color:var(--bw-ink);}
+
+/* 页脚 */
+.bw-foot{
+  background:#12162a;color:#b9bed6;padding:52px 0 0;font-size:13.5px;
+}
+.bw-foot-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;
+  padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.bw-foot h4{font-size:14px;color:#fff;margin-bottom:12px;letter-spacing:1px;}
+.bw-foot li{margin-bottom:8px;}
+.bw-foot a:hover{color:#fff;}
+.bw-foot-brand .bw-logo-txt strong{color:#fff;}
+.bw-foot-brand .bw-logo-txt small{color:#8f95b5;}
+.bw-foot-brand p{margin-top:14px;font-size:13px;color:#8f95b5;line-height:1.8;}
+.bw-foot-bottom{
+  padding:18px 0 26px;font-size:12.5px;color:#7d83a3;
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+}
+
+/* Toast & Modal */
+.bw-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+  background:#12162a;color:#fff;padding:11px 22px;border-radius:999px;
+  font-size:13.5px;font-weight:700;opacity:0;pointer-events:none;
+  transition:.3s;z-index:200;box-shadow:0 14px 34px rgba(18,22,42,.35);
+}
+.bw-toast.on{opacity:1;transform:translate(-50%,0);}
+.bw-modal{
+  position:fixed;inset:0;background:rgba(18,22,42,.55);z-index:190;
+  display:none;place-items:center;padding:20px;
+}
+.bw-modal.on{display:grid;}
+.bw-modal-card{
+  background:#fff;border-radius:20px;padding:28px;width:min(520px,100%);
+  max-height:82vh;overflow:auto;position:relative;
+}
+.bw-modal-card h3{font-size:19px;margin-bottom:14px;}
+.bw-modal-card p{font-size:14px;color:var(--bw-muted);}
+.bw-modal-close{
+  position:absolute;top:14px;right:14px;border:0;background:#f1f2f9;border-radius:50%;
+  width:32px;height:32px;cursor:pointer;font-size:16px;color:var(--bw-ink);font-family:inherit;
+}
+.bw-field{width:100%;border:1px solid var(--bw-line);border-radius:12px;padding:10px 14px;font-family:inherit;font-size:14px;margin-bottom:12px;}
+.bw-field:focus{outline:2px solid #d8cffb;}
+.bw-top-btn{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  border:0;background:var(--bw-ink);color:#fff;font-size:18px;cursor:pointer;
+  box-shadow:0 12px 28px rgba(18,22,42,.3);opacity:0;pointer-events:none;transition:.3s;z-index:80;
+}
+.bw-top-btn.on{opacity:1;pointer-events:auto;}
+
+/* 响应式 */
+@media (max-width:980px){
+  .bw-hero-grid{grid-template-columns:1fr;gap:30px;}
+  .bw-feature-grid{grid-template-columns:1fr;}
+  .bw-split{grid-template-columns:1fr;}
+  .bw-foot-grid{grid-template-columns:1fr 1fr;}
+  .bw-nav{display:none;}
+  .bw-nav.open{
+    display:flex;flex-direction:column;position:absolute;left:0;right:0;
+    top:100%;background:#fff;padding:12px 4%;border-bottom:1px solid var(--bw-line);
+    box-shadow:0 18px 30px rgba(27,33,69,.1);
+  }
+  .bw-burger{display:block;}
+  .bw-head-inner{position:relative;}
+  .bw-search input{width:96px;}
+}
+@media (max-width:600px){
+  .bw-stats{grid-template-columns:1fr 1fr;}
+  .bw-vrow{grid-template-columns:48px minmax(0,1fr);}
+  .bw-vrow > .bw-actions{grid-column:1/-1;}
+  .bw-vrow-thumb{width:48px;height:36px;}
+  .bw-search{display:none;}
+  .bw-foot-grid{grid-template-columns:1fr;}
+  .bw-hero-tag{left:8px;bottom:8px;font-size:12px;padding:8px 12px;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 -->
+<div class="bw-notice" id="bwNotice">
+  <div class="bw-notice-inner">
+    <span class="bw-notice-badge">官方发布</span>
+    <div class="bw-notice-track">
+      <span>「白水映像·冬番角色演绎计划」第 12 期正片上线，8 位创作者联合出演 · 妆造教程《从素颜到角色：三步定妆法》更新至第 4 讲 · 12 月同好创意挑战赛开启报名，主题「白水以外」· 官网创作者激励计划新增 30 个名额 ·</span>
+      <span>「白水映像·冬番角色演绎计划」第 12 期正片上线，8 位创作者联合出演 · 妆造教程《从素颜到角色：三步定妆法》更新至第 4 讲 · 12 月同好创意挑战赛开启报名，主题「白水以外」· 官网创作者激励计划新增 30 个名额 ·</span>
+    </div>
+  </div>
+</div>
+
+<!-- S1 页头 -->
+<header class="bw-head" id="bwHead">
+  <div class="bw-head-inner">
+    <a class="bw-logo" href="#top" aria-label="白水影社官方网站首页">
+      <span class="bw-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M20 46 L32 14 L44 46 Z" fill="none" stroke="#ff5c8a" stroke-width="5" stroke-linejoin="round"/><circle cx="32" cy="33" r="5" fill="#ffe066"/></svg>
+      </span>
+      <span class="bw-logo-txt"><strong>白水影社</strong><small>BAISHUI STUDIO</small></span>
+    </a>
+    <nav class="bw-nav" id="bwNav" aria-label="主导航">
+      <a href="#bwAbout">品牌解析</a>
+      <a href="#bwVideos">精品内容</a>
+      <a href="#bwTopics">专题企划</a>
+      <a href="#bwCreators">创作者</a>
+      <a href="#bwIndex">图文索引</a>
+      <a href="#bwBoard">数据榜单</a>
+      <a href="#bwFaq">帮助中心</a>
+    </nav>
+    <div class="bw-head-tools">
+      <form class="bw-search" id="bwSearchForm" role="search" aria-label="站内搜索">
+        <input type="search" id="bwSearchInput" placeholder="搜角色、教程、作者" aria-label="搜索关键词">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="bw-btn bw-btn-pink" type="button" data-bw-modal="bwSubmitModal">投稿入口</button>
+      <button class="bw-burger" id="bwBurger" type="button" aria-label="展开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="bw-hero" id="bwHero">
+    <div class="bw-wrap">
+      <div class="bw-hero-grid">
+        <div>
+          <span class="bw-kicker"><i></i>二次元角色演绎官方视频门户</span>
+          <h1>cos被焯出白水<em>·</em>白水影社官方网站</h1>
+          <p class="bw-hero-lead">以角色为衣，以故事为骨——让每一次演绎都有据可循。</p>
+          <p class="bw-hero-intro">
+            白水影社是企业级运营的cos被焯出白水主题视频品牌，深耕二次元角色演绎垂直领域六年。我们为创作者提供专业拍摄场地、正版角色授权通道与高清成片分发体系，已持续产出超过 1400 部原创作品，形成覆盖妆造、演绎、剪辑、幕后完整链路的内容生态，是众多同好首选的演绎社区与官方网站平台。
+          </p>
+          <div class="bw-hero-actions">
+            <a class="bw-btn bw-btn-pink" href="#bwVideos">观看精品内容</a>
+            <a class="bw-btn bw-btn-ghost" href="#bwCreators">认识创作者</a>
+            <button class="bw-btn bw-btn-ghost" type="button" data-bw-modal="bwSubmitModal">加入创作计划</button>
+          </div>
+          <div class="bw-stats">
+            <div class="bw-stat"><b><span class="bw-count" data-bw-target="1428">0</span><small>部</small></b><span>原创正片累计</span></div>
+            <div class="bw-stat"><b><span class="bw-count" data-bw-target="286">0</span><small>位</small></b><span>签约演绎创作者</span></div>
+            <div class="bw-stat"><b><span class="bw-count" data-bw-target="97">0</span><small>%</small></b><span>同好口碑好评率</span></div>
+          </div>
+        </div>
+        <div class="bw-hero-visual">
+          <div class="bw-hero-frame">
+            <svg viewBox="0 0 800 600" role="img" aria-label="白水影社片场主视觉：雾白色纱幕下角色立于水台之上，逆光勾出轮廓">
+              <defs>
+                <linearGradient id="bwHeroSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#20264a"/><stop offset="1" stop-color="#4a3a7d"/>
+                </linearGradient>
+                <linearGradient id="bwHeroWater" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#bfe9f5"/><stop offset="1" stop-color="#5f8fc4"/>
+                </linearGradient>
+                <linearGradient id="bwHeroFab" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ff5c8a" stop-opacity="0.85"/><stop offset="1" stop-color="#7a5cf0" stop-opacity="0.75"/>
+                </linearGradient>
+                <radialGradient id="bwHeroGlow" cx="0.5" cy="0.42" r="0.55">
+                  <stop offset="0" stop-color="#ffe9f2" stop-opacity="0.9"/><stop offset="1" stop-color="#ffe9f2" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="800" height="600" fill="url(#bwHeroSky)"/>
+              <circle cx="400" cy="250" r="230" fill="url(#bwHeroGlow)"/>
+              <path d="M0 430 Q200 395 400 428 T800 420 L800 600 L0 600 Z" fill="url(#bwHeroWater)" opacity="0.9"/>
+              <path d="M0 468 Q170 442 350 470 T800 462 L800 600 L0 600 Z" fill="#3f6da5" opacity="0.55"/>
+              <g opacity="0.9">
+                <path d="M300 120 Q260 210 250 300 Q248 360 300 400 L340 398 Q300 350 302 300 Q306 215 336 128 Z" fill="url(#bwHeroFab)"/>
+                <path d="M500 118 Q544 208 552 300 Q556 360 502 400 L462 398 Q504 350 500 300 Q494 214 466 126 Z" fill="url(#bwHeroFab)" opacity="0.8"/>
+              </g>
+              <g>
+                <ellipse cx="400" cy="404" rx="74" ry="14" fill="#1b2145" opacity="0.35"/>
+                <path d="M400 168 Q352 190 344 262 Q338 318 366 372 Q384 402 400 404 Q416 402 434 372 Q462 318 456 262 Q448 190 400 168 Z" fill="#161c38"/>
+                <path d="M378 176 Q400 156 422 176 Q440 196 434 226 Q414 208 400 210 Q386 208 366 226 Q360 196 378 176 Z" fill="#ff8fb0"/>
+                <circle cx="384" cy="236" r="5" fill="#ffe066"/>
+                <circle cx="416" cy="236" r="5" fill="#ffe066"/>
+                <path d="M388 262 Q400 272 412 262" stroke="#ffe066" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M392 300 Q400 340 400 372 M408 300 Q400 340 400 372" stroke="#ff5c8a" stroke-width="2.5" fill="none" opacity="0.7"/>
+              </g>
+              <g fill="#ffe066" opacity="0.85">
+                <circle cx="150" cy="140" r="3"/><circle cx="672" cy="110" r="4"/><circle cx="710" cy="240" r="2.5"/>
+                <circle cx="96" cy="300" r="2.5"/><circle cx="620" cy="330" r="3"/><circle cx="240" cy="82" r="2"/>
+              </g>
+              <g opacity="0.5" stroke="#e8f4ff" stroke-width="1.4" fill="none">
+                <path d="M120 520 Q260 500 400 520 T690 516"/>
+                <path d="M140 548 Q280 530 420 548 T700 544"/>
+              </g>
+              <text x="44" y="552" font-family="sans-serif" font-size="15" fill="#e8f4ff" letter-spacing="6" opacity="0.75">SCENE 12 · 白水映像</text>
+            </svg>
+          </div>
+          <div class="bw-hero-tag"><i aria-hidden="true"></i>本期片场直播中 · 3 组正在拍摄</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 主内容入口：重点大图 + 文字列表（两列图文卡片 + 排行榜式文字摘要） -->
+  <section class="bw-sec" id="bwVideos">
+    <div class="bw-wrap">
+      <div class="bw-sec-head">
+        <div>
+          <span class="bw-eyebrow">Featured · 焦点内容</span>
+          <h2>cos被焯出白水 <em>精品内容</em> 今日焦点</h2>
+          <p>每一部作品都经过角色资料核对、妆造试拍与成片审片三道流程。焦点位由官方编辑与同好投票共同决定，正版高清，值得信赖。</p>
+        </div>
+        <button class="bw-btn bw-btn-ghost" type="button" data-bw-modal="bwSubmitModal">我要投稿</button>
+      </div>
+
+      <div class="bw-feature-grid">
+        <article class="bw-feature-card">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点正片《白水之下》封面：角色以白水为镜，倒影中显出另一重轮廓">
+              <defs>
+                <linearGradient id="bwFV1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#0f1430"/><stop offset="0.55" stop-color="#42307a"/><stop offset="1" stop-color="#c93b74"/>
+                </linearGradient>
+                <linearGradient id="bwFV1m" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ffe9f2" stop-opacity="0.65"/><stop offset="1" stop-color="#ffe9f2" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#bwFV1)"/>
+              <ellipse cx="320" cy="300" rx="200" ry="42" fill="#1b2145" opacity="0.5"/>
+              <path d="M320 66 Q276 92 268 156 Q262 210 292 268 Q306 296 320 298 Q334 296 348 268 Q378 210 372 156 Q364 92 320 66 Z" fill="#0d1229"/>
+              <path d="M296 72 Q320 48 344 72 Q364 96 352 130 Q330 108 320 110 Q310 108 288 130 Q276 96 296 72 Z" fill="#ff5c8a"/>
+              <circle cx="306" cy="150" r="5.5" fill="#ffe066"/>
+              <circle cx="334" cy="150" r="5.5" fill="#ffe066"/>
+              <path d="M308 184 Q320 196 332 184" stroke="#ffe066" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <g transform="translate(320,330) scale(1,-0.55)" opacity="0.55">
+                <path d="M0 -60 Q-44 -34 -52 30 Q-58 84 -28 142 Q-14 170 0 172 Q14 170 28 142 Q58 84 52 30 Q44 -34 0 -60 Z" fill="#7a5cf0"/>
+              </g>
+              <rect x="0" y="286" width="640" height="74" fill="url(#bwFV1m)"/>
+              <g fill="#fff" opacity="0.9">
+                <rect x="30" y="34" width="12" height="12" rx="3"/>
+                <rect x="48" y="34" width="12" height="12" rx="3" opacity="0.55"/>
+                <rect x="66" y="34" width="12" height="12" rx="3" opacity="0.3"/>
+                <text x="90" y="45" font-family="sans-serif" font-size="13" letter-spacing="3">EP.12 WHITE WATER</text>
+              </g>
+              <circle cx="320" cy="300" r="24" fill="#ff4d84" opacity="0.92"/>
+              <path d="M313 288 L335 300 L313 312 Z" fill="#fff"/>
+              <text x="36" y="336" font-family="sans-serif" font-size="15" fill="#ffe9f2" letter-spacing="2">白水之下 · 角色演绎正片</text>
+            </svg>
+          </figure>
+          <div class="bw-feature-body">
+            <span class="bw-chip bw-chip-pink">本期首推</span><span class="bw-chip bw-chip-violet">角色演绎</span><span class="bw-chip bw-chip-cyan">高清正片</span>
+            <h3>《白水之下》第 12 期：一位角色的一次自我对望</h3>
+            <p>以白水为镜面意象，讲述角色在水台前的独白。全片 8 分 42 秒，含 3 段原创分镜与 1 段无对白长镜头，妆造与灯光均在官方棚内完成，画面保留原始质感，不做重度磨皮。拍摄前团队完成了 27 页角色资料整理，力求每个细节都有出处。</p>
+            <div class="bw-meta">
+              <span>作者 <b>雾白</b></span><span>播放 <b>18.6万</b></span><span>点赞 <b>2.4万</b></span><span>收藏 <b>8621</b></span>
+            </div>
+            <div class="bw-actions">
+              <button class="bw-act" type="button" data-bw-like>👍 点赞 <b>2.4万</b></button>
+              <button class="bw-act" type="button" data-bw-save>♡ 收藏</button>
+              <button class="bw-act" type="button" data-bw-copy>复制链接</button>
+              <button class="bw-act" type="button" data-bw-modal="bwReportModal">反馈</button>
+            </div>
+          </div>
+        </article>
+
+        <div>
+          <div class="bw-side-list">
+            <div class="bw-side-item">
+              <span class="bw-side-num">01</span>
+              <div>
+                <h4>《三步定妆法》：从素颜到角色的临界点</h4>
+                <small>妆造教程 · 雾白 · 播放 9.2 万 · 五星好评 9400</small>
+                <button class="bw-act" type="button" data-bw-like>👍 点赞 <b>9400</b></button>
+              </div>
+            </div>
+            <div class="bw-side-item">
+              <span class="bw-side-num">02</span>
+              <div>
+                <h4>角色走路姿态训练：重心、摆幅与镜头感</h4>
+                <small>实用技巧 · 十七 · 播放 7.5 万 · 收藏 6120</small>
+                <button class="bw-act" type="button" data-bw-like>👍 点赞 <b>6120</b></button>
+              </div>
+            </div>
+            <div class="bw-side-item">
+              <span class="bw-side-num">03</span>
+              <div>
+                <h4>棚内布光实录：冷调轮廓光怎么打不糊</h4>
+                <small>创作幕后 · 灯下白 · 播放 6.8 万 · 收藏 5330</small>
+                <button class="bw-act" type="button" data-bw-like>👍 点赞 <b>5330</b></button>
+              </div>
+            </div>
+            <div class="bw-side-item">
+              <span class="bw-side-num">04</span>
+              <div>
+                <h4>同好访谈：把爱好做成稳定产出有多难</h4>
+                <small>人物访谈 · 编辑部 · 播放 5.1 万 · 评论 1200</small>
+                <button class="bw-act" type="button" data-bw-like>👍 点赞 <b>4100</b></button>
+              </div>
+            </div>
+            <div class="bw-side-item">
+              <span class="bw-side-num">05</span>
+              <div>
+                <h4>冬番联合出演：8 位创作者的一天</h4>
+                <small>日常记录 · 白水影社 · 播放 4.7 万 · 收藏 3870</small>
+                <button class="bw-act" type="button" data-bw-like>👍 点赞 <b>3870</b></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 视频文字列表 6 条 -->
+      <div class="bw-vlist" id="bwVideoList">
+        <div class="bw-vrow" data-bw-key="定妆 妆造 教程">
+          <div class="bw-vrow-thumb">
+            <svg viewBox="0 0 64 44" role="img" aria-label="妆造教程视频缩略图：粉色调化妆台与刷具剪影">
+              <rect width="64" height="44" fill="#ffe4ee"/>
+              <circle cx="20" cy="18" r="9" fill="#ff8fb0"/>
+              <path d="M42 34 L52 10 L60 34 Z" fill="#d92e64" opacity="0.7"/>
+              <rect x="6" y="34" width="52" height="3" rx="1.5" fill="#c81f56" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="bw-vrow-main">
+            <h4>定妆全流程拆解：底妆、修容与角色脸型</h4>
+            <p>从素颜开始记录三小时定妆，含 5 个易错点与棚内补妆建议。</p>
+            <div class="bw-tagline">#妆造教程 · 雾白 · 播放 9.2万 · 点赞 9400 · 收藏 3120</div>
+          </div>
+          <div class="bw-actions">
+            <button class="bw-act" type="button" data-bw-like>👍</button>
+            <button class="bw-act" type="button" data-bw-save>♡</button>
+          </div>
+        </div>
+        <div class="bw-vrow" data-bw-key="棚拍 布光 幕后">
+          <div class="bw-vrow-thumb">
+            <svg viewBox="0 0 64 44" role="img" aria-label="棚拍布光视频缩略图：深蓝背景中的灯架与光锥">
+              <rect width="64" height="44" fill="#101632"/>
+              <path d="M32 2 L14 42 L50 42 Z" fill="#28c8d8" opacity="0.28"/>
+              <rect x="29" y="8" width="6" height="26" rx="3" fill="#ffe066"/>
+              <ellipse cx="32" cy="39" rx="18" ry="3" fill="#7a5cf0" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="bw-vrow-main">
+            <h4>冷调轮廓光实战：让角色从背景里“浮”出来</h4>
+            <p>一组双灯位对照实验，讲解色温、柔光罩与反光板的取舍。</p>
+            <div class="bw-tagline">#创作幕后 · 灯下白 · 播放 6.8万 · 点赞 5330 · 收藏 2870</div>
+          </div>
+          <div class="bw-actions">
+            <button class="bw-act" type="button" data-bw-like>👍</button>
+            <button class="bw-act" type="button" data-bw-save>♡</button>
+          </div>
+        </div>
+        <div class="bw-vrow" data-bw-key="访谈 行业 观察">
+          <div class="bw-vrow-thumb">
+            <svg viewBox="0 0 64 44" role="img" aria-label="人物访谈视频缩略图：两把椅子与话筒剪影">
+              <rect width="64" height="44" fill="#f4f5fb"/>
+              <circle cx="18" cy="14" r="7" fill="#7a5cf0"/>
+              <circle cx="46" cy="14" r="7" fill="#ff4d84"/>
+              <rect x="12" y="24" width="12" height="14" rx="5" fill="#3a2a72"/>
+              <rect x="40" y="24" width="12" height="14" rx="5" fill="#c81f56"/>
+              <rect x="30" y="26" width="4" height="10" rx="2" fill="#28c8d8"/>
+            </svg>
+          </div>
+          <div class="bw-vrow-main">
+            <h4>对话五位创作者：当爱好变成稳定产出</h4>
+            <p>聊时间管理、家里人的态度、设备投入与收入结构，不回避难点。</p>
+            <div class="bw-tagline">#人物访谈 · 编辑部 · 播放 5.1万 · 点赞 4100 · 收藏 1960</div>
+          </div>
+          <div class="bw-actions">
+            <button class="bw-act" type="button" data-bw-like>👍</button>
+            <button class="bw-act" type="button" data-bw-save>♡</button>
+          </div>
+        </div>
+        <div class="bw-vrow" data-bw-key="动作 技巧 姿态">
+          <div class="bw-vrow-thumb">
+            <svg viewBox="0 0 64 44" role="img" aria-label="姿态训练视频缩略图：地面标记线与行走脚印">
+              <rect width="64" height="44" fill="#fff1da"/>
+              <path d="M0 32 L64 32" stroke="#a86900" stroke-width="2" stroke-dasharray="5 4"/>
+              <ellipse cx="18" cy="26" rx="5" ry="8" fill="#ffb648"/>
+              <ellipse cx="34" cy="22" rx="5" ry="8" fill="#d92e64" opacity="0.75"/>
+              <ellipse cx="50" cy="26" rx="5" ry="8" fill="#ffb648"/>
+            </svg>
+          </div>
+          <div class="bw-vrow-main">
+            <h4>姿态训练课：重心、摆幅与镜头前的手部位置</h4>
+            <p>12 个基础动作拆解，附镜前自检清单，适合刚开始演绎的同好。</p>
+            <div class="bw-tagline">#实用技巧 · 十七 · 播放 7.5万 · 点赞 6120 · 收藏 3410</div>
+          </div>
+          <div class="bw-actions">
+            <button class="bw-act" type="button" data-bw-like>👍</button>
+            <button class="bw-act" type="button" data-bw-save>♡</button>
+          </div>
+        </div>
+        <div class="bw-vrow" data-bw-key="剪辑 后期 流程">
+          <div class="bw-vrow-thumb">
+            <svg viewBox="0 0 64 44" role="img" aria-label="剪辑流程视频缩略图：时间轴与关键帧色块">
+              <rect width="64" height="44" fill="#ece6ff"/>
+              <rect x="6" y="10" width="52" height="8" rx="4" fill="#7a5cf0"/>
+              <rect x="12" y="22" width="30" height="8" rx="4" fill="#ff4d84" opacity="0.8"/>
+              <rect x="20" y="34" width="38" height="6" rx="3" fill="#28c8d8"/>
+            </svg>
+          </div>
+          <div class="bw-vrow-main">
+            <h4>一支 8 分钟正片是怎么剪出来的：时间轴复盘</h4>
+            <p>从素材命名到调色分层，展示 340 条素材如何压缩成 42 个镜头。</p>
+            <div class="bw-tagline">#教程干货 · 剪风 · 播放 4.3万 · 点赞 3560 · 收藏 2410</div>
+          </div>
+          <div class="bw-actions">
+            <button class="bw-act" type="button" data-bw-like>👍</button>
+            <button class="bw-act" type="button" data-bw-save>♡</button>
+          </div>
+        </div>
+        <div class="bw-vrow" data-bw-key="故事 情感 治愈">
+          <div class="bw-vrow-thumb">
+            <svg viewBox="0 0 64 44" role="img" aria-label="情感故事视频缩略图：夜色中的一盏台灯">
+              <rect width="64" height="44" fill="#1d2340"/>
+              <circle cx="32" cy="18" r="10" fill="#ffb648" opacity="0.85"/>
+              <path d="M32 8 L20 30 L44 30 Z" fill="#ffe066" opacity="0.45"/>
+              <rect x="30" y="30" width="4" height="10" fill="#8f95b5"/>
+            </svg>
+          </div>
+          <div class="bw-vrow-main">
+            <h4>深夜整理道具箱的三个小时：一件旧披风的来历</h4>
+            <p>一件陪了六年的披风，藏着三次改版和一场没能拍完的戏。</p>
+            <div class="bw-tagline">#情感故事 · 小满 · 播放 3.9万 · 点赞 3020 · 收藏 1580</div>
+          </div>
+          <div class="bw-actions">
+            <button class="bw-act" type="button" data-bw-like>👍</button>
+            <button class="bw-act" type="button" data-bw-save>♡</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析（正文 800 字以上，安排在此处） -->
+  <section class="bw-sec" id="bwAbout">
+    <div class="bw-wrap">
+      <div class="bw-sec-head">
+        <div>
+          <span class="bw-eyebrow">Insight · 关键词解析</span>
+          <h2>读懂 <em>cos被焯出白水</em>：一个演绎概念的完整说明</h2>
+          <p>品牌官方编辑团队对这一主题的长期观察与方法整理，帮助同好建立更清晰的创作判断。</p>
+        </div>
+      </div>
+      <article class="bw-article">
+        <h3>一、概念从哪里来：白水意象与角色演绎的关系</h3>
+        <p>在cos被焯出白水的语境里，“白水”不是简单的画面底色，而是一种被反复讨论的视觉与叙事方法。它来自烹饪里“焯水”的动作——把食材投入沸水，短暂停留，撇去浮沫，留下清亮。创作者借用这个动作，把它转译成角色演绎中的“剥离”：把角色身上过度堆叠的装饰、滤镜与表演杂念去掉，只保留轮廓、目光与呼吸。白水影社在六年运营中记录了大量这类尝试，从早期的小棚试拍到如今的旗舰片场，同一主题被不断重新定义。</p>
+        <p>很多新同好第一次接触这个说法，会误以为它强调的是“白”，其实它强调的是“出”——角色从水面、从背景、从过度包装里浮出来，被观众真正看见。品牌把这一逻辑整理成官网上的公开拍摄手册，供签约创作者与投稿者参考，这也是我们被称作“用户首选”的重要原因之一。</p>
+
+        <h3>二、拍摄与制作的四个关键节点</h3>
+        <p>第一个节点是角色资料核对。团队要求创作者提交角色设定来源、动作参考与配色依据，避免凭空发挥。第二个节点是妆造试拍，通常在正式拍摄前一周进行，用手机记录侧脸与手部细节，确认发饰不会在动态中穿帮。第三个节点是布光与走位，棚内按“低饱和背景 + 冷调轮廓光”的原则执行，白水影社的布光模板已经迭代到第七版。</p>
+        <p>第四个节点是成片审片。审片不是挑毛病，而是检查叙事是否完整：开场 15 秒能否交代角色处境，中段是否有情绪递进，结尾是否留有余韵。通过审片后，作品才会进入官网焦点位候选池，由编辑与同好投票共同决定是否推荐。这一套流程让 cos被焯出白水 的产出保持稳定品质，也让创作者清楚知道每一步该做什么。</p>
+        <ul>
+          <li>角色资料核对：设定来源、姿态参考、配色依据三项齐全才进入下一步。</li>
+          <li>妆造试拍：一周前完成，重点检查发饰、袖口与鞋履在动作中的稳定性。</li>
+          <li>布光走位：冷调轮廓光为主，背景饱和度控制在低区间，避免抢主体。</li>
+          <li>成片审片：三问法——交代清楚了吗、有递进吗、结尾有余韵吗。</li>
+        </ul>
+        <div class="bw-quote-inline">“白水不是把画面洗淡，而是把注意力还给角色本身。”——白水影社拍摄手册第七版</div>
+
+        <h3>三、为什么它吸引了持续的社区创作</h3>
+        <p>从社区角度看，cos被焯出白水 的吸引力在于门槛清晰但上限很高。门槛清晰，是指新手只要掌握定妆、姿态与基础布光三件事，就能拍出可看的作品；上限很高，是指同一主题可以不断往深处走，有人研究水面反射的物理表现，有人研究长镜头的调度，也有人把重点放在角色心理的细微变化上。白水影社的内容生态因此呈现出多元面貌，既有入门教程，也有实验性短片。</p>
+        <p>另一个关键因素是正版与尊重。品牌坚持角色授权通道规范化，鼓励创作者标注设定出处，并在官网公开引用规范。这种对原创与正版的坚持，让社区氛围更健康，也让不少合作方愿意长期投入。我们相信，只有持续运营、认真对待每一个细节，cos被焯出白水才能从一时的热词变成有生命力的创作方向。对普通观众来说，这里是能安心观看高清正片的地方；对创作者来说，这里是能获得反馈、成长与被看见的平台。</p>
+
+        <h3>四、给新加入同好的三条实操建议</h3>
+        <p>第一，先做减法。第一次拍摄不要追求复杂场景与大量道具，选一个角色、一种光、一个动作，把它做扎实。第二，记录过程。把试拍、失败镜头与最终成片放在一起对照，你会更快发现自己的问题。第三，主动交流。白水影社官网的评论区与投稿入口都向同好开放，认真写下的反馈往往比点赞更有价值。品牌也会定期整理高频问题，更新到帮助中心，让每一次报名、上传与下载都有清晰的路径可循。</p>
+        <p>在此基础上，我们希望每位同好都能找到属于自己的表达方式。cos被焯出白水 不是一个固定模板，而是一种观看与创作的姿态：把浮沫撇去，让真正重要的部分留在水里。白水影社将继续以官方网站的身份，为创作者提供场地、流程与传播支持，让好作品被更多人看见。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="bw-sec" id="bwTopics">
+    <div class="bw-wrap">
+      <div class="bw-sec-head">
+        <div>
+          <span class="bw-eyebrow">Series · 专题企划</span>
+          <h2>cos被焯出白水 <em>专题矩阵</em> 正在更新</h2>
+          <p>官方企划按季度推进，每个专题含 3 条以上内容，主题之间避免重复，形成可持续的内容生态。</p>
+        </div>
+      </div>
+      <div class="bw-topic-grid">
+        <article class="bw-topic">
+          <span class="bw-topic-status">更新中 · 第 4 期</span>
+          <h3>冬番角色演绎计划</h3>
+          <p>联合 8 位创作者完成 6 个角色的冬季演绎，重点解决低温环境下的妆造稳定性与服装层次。</p>
+          <ul class="bw-topic-list">
+            <li>《白水之下》第 12 期正片</li>
+            <li>低温棚拍妆造应急手册</li>
+            <li>冬番片场一日记录</li>
+          </ul>
+        </article>
+        <article class="bw-topic">
+          <span class="bw-topic-status">更新中 · 第 2 期</span>
+          <h3>定妆三步法公开课</h3>
+          <p>面向新同好的入门企划，把定妆拆成可执行三步，每期配一份自查清单与一次直播答疑。</p>
+          <ul class="bw-topic-list">
+            <li>底妆与角色脸型的匹配</li>
+            <li>眼妆层次与镜头表现</li>
+            <li>定妆后 8 小时补妆实测</li>
+          </ul>
+        </article>
+        <article class="bw-topic">
+          <span class="bw-topic-status done">已完结 · 共 5 期</span>
+          <h3>白水以外：跨界实验短片</h3>
+          <p>鼓励创作者暂时离开熟悉题材，与舞者、乐手、手作人合作，探索角色演绎的边界。</p>
+          <ul class="bw-topic-list">
+            <li>与舞者合作的无对白片段</li>
+            <li>手作道具与角色质感对照</li>
+            <li>实验短片创作复盘</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="bw-sec" id="bwCreators">
+    <div class="bw-wrap">
+      <div class="bw-sec-head">
+        <div>
+          <span class="bw-eyebrow">Creators · 创作者</span>
+          <h2>cos被焯出白水 <em>创作者矩阵</em> 签约名录</h2>
+          <p>每位创作者均通过作品审核与拍摄规范培训，擅长领域各异，共同构成品牌的原创内容生态。</p>
+        </div>
+      </div>
+      <div class="bw-author-grid">
+        <article class="bw-author">
+          <div class="bw-avatar" style="background:linear-gradient(135deg,#ff4d84,#7a5cf0);">雾</div>
+          <div class="bw-author-main">
+            <h3>雾白 <span>签约主创</span></h3>
+            <div class="bw-role">擅长：角色演绎 · 妆造设计</div>
+            <p>六年演绎经验，擅长把角色情绪压缩在一个眼神里。主持《三步定妆法》公开课，累计帮助超过 400 位新同好完成第一次正式拍摄，作品风格克制、留白多。</p>
+            <div class="bw-author-nums"><span>作品 <b>128</b></span><span>粉丝 <b>26.4万</b></span></div>
+            <button class="bw-act" type="button" data-bw-author="雾白">查看资料</button>
+          </div>
+        </article>
+        <article class="bw-author">
+          <div class="bw-avatar" style="background:linear-gradient(135deg,#28c8d8,#3a2a72);">灯</div>
+          <div class="bw-author-main">
+            <h3>灯下白 <span>灯光指导</span></h3>
+            <div class="bw-role">擅长：棚拍布光 · 画面质感</div>
+            <p>从剧场灯光转到棚拍，对冷调轮廓光有近乎固执的要求。参与 60 余部正片的灯光设计，习惯在拍摄前手绘光位图，被同好称作“把光当角色用的人”。</p>
+            <div class="bw-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>12.7万</b></span></div>
+            <button class="bw-act" type="button" data-bw-author="灯下白">查看资料</button>
+          </div>
+        </article>
+        <article class="bw-author">
+          <div class="bw-avatar" style="background:linear-gradient(135deg,#ffb648,#d92e64);">十</div>
+          <div class="bw-author-main">
+            <h3>十七 <span>动作教练</span></h3>
+            <div class="bw-role">擅长：姿态训练 · 镜前调度</div>
+            <p>有五年形体教学经验，把角色动作拆解成可练习的小单元。她坚持“先把站站稳，再去谈表现力”，课程被不少新同好当作入门第一课。</p>
+            <div class="bw-author-nums"><span>作品 <b>74</b></span><span>粉丝 <b>9.8万</b></span></div>
+            <button class="bw-act" type="button" data-bw-author="十七">查看资料</button>
+          </div>
+        </article>
+        <article class="bw-author">
+          <div class="bw-avatar" style="background:linear-gradient(135deg,#5a3fd0,#0f7f8c);">剪</div>
+          <div class="bw-author-main">
+            <h3>剪风 <span>后期主创</span></h3>
+            <div class="bw-role">擅长：剪辑节奏 · 调色分层</div>
+            <p>相信剪辑是第二次表演。擅长在大量素材里找到情绪的落点，主张少用花哨转场，用节奏说话。主导多支专题片的后期流程规范化整理。</p>
+            <div class="bw-author-nums"><span>作品 <b>112</b></span><span>粉丝 <b>15.3万</b></span></div>
+            <button class="bw-act" type="button" data-bw-author="剪风">查看资料</button>
+          </div>
+        </article>
+        <article class="bw-author">
+          <div class="bw-avatar" style="background:linear-gradient(135deg,#c81f56,#ffb648);">满</div>
+          <div class="bw-author-main">
+            <h3>小满 <span>内容作者</span></h3>
+            <div class="bw-role">擅长：情感故事 · 日常记录</div>
+            <p>喜欢写小物件背后的故事，一条旧披风也能讲十五分钟。文字与镜头都很慢，但评论区总有人说“看完想起了自己那件没舍得扔的衣服”。</p>
+            <div class="bw-author-nums"><span>作品 <b>63</b></span><span>粉丝 <b>7.2万</b></span></div>
+            <button class="bw-act" type="button" data-bw-author="小满">查看资料</button>
+          </div>
+        </article>
+        <article class="bw-author">
+          <div class="bw-avatar" style="background:linear-gradient(135deg,#0f7f8c,#7a5cf0);">编</div>
+          <div class="bw-author-main">
+            <h3>编辑部 <span>官方团队</span></h3>
+            <div class="bw-role">擅长：人物访谈 · 行业观察</div>
+            <p>白水影社官方内容团队，负责专题策划、创作者访谈与拍摄手册更新。坚持每篇内容都有出处、有细节、有可执行建议，是官网最稳定的更新力量。</p>
+            <div class="bw-author-nums"><span>作品 <b>210</b></span><span>粉丝 <b>33.1万</b></span></div>
+            <button class="bw-act" type="button" data-bw-author="编辑部">查看资料</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 图文索引 -->
+  <section class="bw-sec" id="bwIndex">
+    <div class="bw-wrap">
+      <div class="bw-sec-head">
+        <div>
+          <span class="bw-eyebrow">Index · 图文索引</span>
+          <h2>cos被焯出白水 <em>图文索引</em>：值得反复读的四篇</h2>
+          <p>长图与文字并行的整理型内容，适合收藏后慢慢看，每篇都标注了可执行的部分。</p>
+        </div>
+      </div>
+      <div class="bw-index-grid">
+        <article class="bw-index">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="图文索引封面：桌面上的道具清单与相机镜头">
+              <rect width="480" height="270" fill="#f4f5fb"/>
+              <rect x="46" y="52" width="190" height="150" rx="10" fill="#fff" stroke="#c9cfe6"/>
+              <g fill="#7a5cf0" opacity="0.7">
+                <rect x="66" y="76" width="120" height="8" rx="4"/>
+                <rect x="66" y="98" width="150" height="6" rx="3" opacity="0.6"/>
+                <rect x="66" y="114" width="140" height="6" rx="3" opacity="0.5"/>
+                <rect x="66" y="130" width="100" height="6" rx="3" opacity="0.4"/>
+              </g>
+              <circle cx="330" cy="128" r="56" fill="#1d2340"/>
+              <circle cx="330" cy="128" r="38" fill="#28c8d8" opacity="0.65"/>
+              <circle cx="330" cy="128" r="18" fill="#ffe066"/>
+              <rect x="384" y="112" width="46" height="32" rx="8" fill="#ff4d84" opacity="0.8"/>
+            </svg>
+          </figure>
+          <div class="bw-index-body">
+            <h3>拍摄前 24 小时检查清单</h3>
+            <p>道具、服装、备用件、充电与交通，一张纸就能核对完，附可打印版本说明。</p>
+          </div>
+        </article>
+        <article class="bw-index">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="图文索引封面：三档色卡并排与角色配色对照">
+              <rect width="480" height="270" fill="#101632"/>
+              <rect x="40" y="46" width="110" height="178" rx="12" fill="#ff5c8a" opacity="0.85"/>
+              <rect x="172" y="74" width="110" height="150" rx="12" fill="#28c8d8" opacity="0.8"/>
+              <rect x="304" y="60" width="110" height="164" rx="12" fill="#ffb648" opacity="0.85"/>
+              <g fill="#fff" opacity="0.85">
+                <circle cx="95" cy="94" r="10"/><circle cx="227" cy="122" r="10"/><circle cx="359" cy="108" r="10"/>
+              </g>
+              <text x="40" y="252" font-family="sans-serif" font-size="14" fill="#cfc9ea" letter-spacing="2">COLOR MATCH</text>
+            </svg>
+          </figure>
+          <div class="bw-index-body">
+            <h3>角色配色与色温对照表</h3>
+            <p>把设定图主色提取成三档色卡，对照棚内灯光与后期调色的实际偏移量。</p>
+          </div>
+        </article>
+        <article class="bw-index">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="图文索引封面：创作时间轴与三个节点标记">
+              <rect width="480" height="270" fill="#fff1da"/>
+              <path d="M40 150 L440 150" stroke="#a86900" stroke-width="4" stroke-dasharray="10 8"/>
+              <circle cx="110" cy="150" r="16" fill="#d92e64"/>
+              <circle cx="240" cy="150" r="16" fill="#7a5cf0"/>
+              <circle cx="370" cy="150" r="16" fill="#0f7f8c"/>
+              <g font-family="sans-serif" font-size="15" fill="#3c425e" text-anchor="middle">
+                <text x="110" y="196">想法</text><text x="240" y="196">试拍</text><text x="370" y="196">成片</text>
+              </g>
+              <text x="40" y="64" font-family="sans-serif" font-size="20" fill="#a86900" letter-spacing="2">6 WEEKS</text>
+            </svg>
+          </figure>
+          <div class="bw-index-body">
+            <h3>从想法到成片的六周排期</h3>
+            <p>把创作拆成六周，每周一个明确目标，附常见延期原因与补救办法。</p>
+          </div>
+        </article>
+        <article class="bw-index">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="图文索引封面：评论区对话气泡与点赞图标">
+              <rect width="480" height="270" fill="#ece6ff"/>
+              <rect x="48" y="54" width="190" height="72" rx="20" fill="#fff"/>
+              <rect x="120" y="150" width="250" height="72" rx="20" fill="#7a5cf0"/>
+              <g fill="#7a5cf0" opacity="0.7">
+                <rect x="70" y="76" width="120" height="8" rx="4"/>
+                <rect x="70" y="94" width="90" height="8" rx="4" opacity="0.6"/>
+              </g>
+              <g fill="#fff" opacity="0.85">
+                <rect x="144" y="172" width="160" height="8" rx="4"/>
+                <rect x="144" y="190" width="110" height="8" rx="4" opacity="0.7"/>
+              </g>
+              <path d="M392 84 l12 22 24 4 -18 17 4 24 -22 -12 -22 12 4 -24 -18 -17 24 -4 z" fill="#ffb648"/>
+            </svg>
+          </figure>
+          <div class="bw-index-body">
+            <h3>怎么写一条有用的评论</h3>
+            <p>从“好看”到“这里可以更好”，给出三个具体模板与四个反面例子。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据榜单 + 用户评价 -->
+  <section class="bw-sec" id="bwBoard">
+    <div class="bw-wrap">
+      <div class="bw-sec-head">
+        <div>
+          <span class="bw-eyebrow">Board · 数据榜单</span>
+          <h2>cos被焯出白水 <em>热度与口碑</em> 双榜</h2>
+          <p>榜单每两周更新，数据统计周期为 14 天，仅统计官网内完整播放与有效互动。</p>
+        </div>
+      </div>
+      <div class="bw-board">
+        <div class="bw-board-col">
+          <h3><i aria-hidden="true"></i>热度榜</h3>
+          <div class="bw-board-row"><span class="bw-rk top">1</span><b>《白水之下》第 12 期</b><em>18.6万播放</em></div>
+          <div class="bw-board-row"><span class="bw-rk top">2</span><b>定妆全流程拆解</b><em>9.2万播放</em></div>
+          <div class="bw-board-row"><span class="bw-rk">3</span><b>姿态训练课</b><em>7.5万播放</em></div>
+          <div class="bw-board-row"><span class="bw-rk">4</span><b>冷调轮廓光实战</b><em>6.8万播放</em></div>
+          <div class="bw-board-row"><span class="bw-rk">5</span><b>对话五位创作者</b><em>5.1万播放</em></div>
+        </div>
+        <div class="bw-board-col">
+          <h3><i aria-hidden="true"></i>新人榜</h3>
+          <div class="bw-board-row"><span class="bw-rk top">1</span><b>青禾</b><em>首作 3.4万</em></div>
+          <div class="bw-board-row"><span class="bw-rk top">2</span><b>木野</b><em>首作 2.9万</em></div>
+          <div class="bw-board-row"><span class="bw-rk">3</span><b>一叶</b><em>首作 2.1万</em></div>
+          <div class="bw-board-row"><span class="bw-rk">4</span><b>知夏</b><em>首作 1.8万</em></div>
+          <div class="bw-board-row"><span class="bw-rk">5</span><b>南枝</b><em>首作 1.5万</em></div>
+        </div>
+        <div class="bw-board-col">
+          <h3><i aria-hidden="true"></i>口碑榜</h3>
+          <div class="bw-board-row"><span class="bw-rk top">1</span><b>深夜整理道具箱</b><em>9.6分</em></div>
+          <div class="bw-board-row"><span class="bw-rk top">2</span><b>把爱好做成稳定产出</b><em>9.5分</em></div>
+          <div class="bw-board-row"><span class="bw-rk">3</span><b>六周排期实录</b><em>9.3分</em></div>
+          <div class="bw-board-row"><span class="bw-rk">4</span><b>白水以外·实验短片</b><em>9.1分</em></div>
+          <div class="bw-board-row"><span class="bw-rk">5</span><b>冬番片场一日</b><em>8.9分</em></div>
+        </div>
+      </div>
+
+      <div class="bw-sec-head" style="margin-top:44px;">
+        <div>
+          <span class="bw-eyebrow">Reviews · 用户评价</span>
+          <h2>同好怎么说：<em>真实评价摘要</em></h2>
+        </div>
+      </div>
+      <div class="bw-review-grid">
+        <div class="bw-review">
+          <div class="bw-review-head">
+            <div class="bw-avatar" style="background:linear-gradient(135deg,#7a5cf0,#28c8d8);">青</div>
+            <div><b>青禾</b><small>入坑 8 个月</small></div>
+            <span class="bw-review-stars">★★★★★</span>
+          </div>
+          <p>定妆三步法真的救了我，第一次拍没翻车，发饰全程没掉。清单里连备用发卡都写了，属于看完能马上动手的那种。</p>
+        </div>
+        <div class="bw-review">
+          <div class="bw-review-head">
+            <div class="bw-avatar" style="background:linear-gradient(135deg,#ff4d84,#ffb648);">阿</div>
+            <div><b>阿柚</b><small>在校生</small></div>
+            <span class="bw-review-stars">★★★★☆</span>
+          </div>
+          <p>正片质感很好，但 8 分钟稍微有点长，建议官网后面出个三分钟精简版，通勤路上看更方便。</p>
+        </div>
+        <div class="bw-review">
+          <div class="bw-review-head">
+            <div class="bw-avatar" style="background:linear-gradient(135deg,#0f7f8c,#3a2a72);">老</div>
+            <div><b>老周</b><small>摄影爱好者</small></div>
+            <span class="bw-review-stars">★★★★★</span>
+          </div>
+          <p>布光那期讲得很实在，色温和柔光罩的对照实验我照着复现了一遍，确实有差别。这种不藏细节的内容值得信赖。</p>
+        </div>
+        <div class="bw-review">
+          <div class="bw-review-head">
+            <div class="bw-avatar" style="background:linear-gradient(135deg,#c81f56,#7a5cf0);">小</div>
+            <div><b>小满仓</b><small>普通观众</small></div>
+            <span class="bw-review-stars">★★★★★</span>
+          </div>
+          <p>本来只是随便点开，结果把旧披风那期看完了。不是那种喊口号的视频，讲的是具体的东西，看得进去。</p>
+        </div>
+        <div class="bw-review">
+          <div class="bw-review-head">
+            <div class="bw-avatar" style="background:linear-gradient(135deg,#ffb648,#0f7f8c);">半</div>
+            <div><b>半糖</b><small>投稿作者</small></div>
+            <span class="bw-review-stars">★★★★☆</span>
+          </div>
+          <p>投稿流程比我预想的清楚，初审三天内就回复了，还给了一条很具体的修改建议。希望能多一点夜间棚的档期。</p>
+        </div>
+        <div class="bw-review">
+          <div class="bw-review-head">
+            <div class="bw-avatar" style="background:linear-gradient(135deg,#28c8d8,#ff4d84);">木</div>
+            <div><b>木野</b><small>新人创作者</small></div>
+            <span class="bw-review-stars">★★★★★</span>
+          </div>
+          <p>新人榜给了我很大动力。官方会把播放数据拆开讲，让人知道自己差在哪里，而不是只给一个总数。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作品牌 + 投稿 / 创作灵感 -->
+  <section class="bw-sec" id="bwNews">
+    <div class="bw-wrap">
+      <div class="bw-sec-head">
+        <div>
+          <span class="bw-eyebrow">News · 企业动态</span>
+          <h2>cos被焯出白水 <em>官方动态</em> 与合作伙伴</h2>
+          <p>品牌事项、平台更新与合作进展，均以官网发布为准。</p>
+        </div>
+      </div>
+      <div class="bw-news">
+        <div class="bw-news-item">
+          <time datetime="2026-11-18">2026.11.18</time>
+          <p>官网创作者激励计划扩容，新增 30 个签约名额，重点招募妆造与后期方向创作者。</p>
+        </div>
+        <div class="bw-news-item">
+          <time datetime="2026-11-10">2026.11.10</time>
+          <p>拍摄手册第七版上线，新增低温环境妆造稳定性章节与三份自查清单。</p>
+        </div>
+        <div class="bw-news-item">
+          <time datetime="2026-10-29">2026.10.29</time>
+          <p>12 月同好创意挑战赛开启报名，主题「白水以外」，设 5 个奖项与一次线下放映。</p>
+        </div>
+        <div class="bw-news-item">
+          <time datetime="2026-10-12">2026.10.12</time>
+          <p>与三家动漫周边品牌达成内容合作，正版角色周边将在官网专题页同步展示。</p>
+        </div>
+      </div>
+
+      <div class="bw-split" style="margin-top:34px;">
+        <div class="bw-panel">
+          <h3>合作品牌与伙伴</h3>
+          <p>我们与注重原创与品质的伙伴长期合作，共同维护正版内容生态。</p>
+          <div class="bw-partners">
+            <span class="bw-partner">星野道具工房</span>
+            <span class="bw-partner">白页摄影棚</span>
+            <span class="bw-partner">素研妆造</span>
+            <span class="bw-partner">慢剪后期工作室</span>
+            <span class="bw-partner">南巷漫周边</span>
+          </div>
+        </div>
+        <div class="bw-panel">
+          <h3>创作灵感与投稿</h3>
+          <p>没有头绪时，可以先从这三个小练习开始：用一个动作讲清角色处境；用一盏灯制造层次；用一段环境音替代对白。</p>
+          <div class="bw-submit-box">
+            <p>投稿需提交角色设定来源、成片文件与 200 字创作说明。审核周期约 3 个工作日，通过后进入官网焦点位候选池。</p>
+            <button class="bw-btn bw-btn-ghost" type="button" data-bw-modal="bwSubmitModal">立即投稿 / 报名挑战赛</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bw-sec" id="bwFaq">
+    <div class="bw-wrap">
+      <div class="bw-sec-head">
+        <div>
+          <span class="bw-eyebrow">FAQ · 帮助中心</span>
+          <h2>cos被焯出白水 <em>常见问题</em> 说明</h2>
+          <p>关于投稿、授权、设备与观看的常见疑问，点击展开查看。</p>
+        </div>
+      </div>
+      <div class="bw-faq">
+        <details>
+          <summary>投稿需要满足哪些基本条件？</summary>
+          <p>需要提交完整成片、角色设定来源说明与 200 字以内的创作说明。画面需为原创拍摄，不接受搬运与二改他人作品。我们鼓励正版授权与清晰标注，这也是平台持续运营的基础。</p>
+        </details>
+        <details>
+          <summary>角色授权如何确认？</summary>
+          <p>官网提供授权材料清单，创作者需提供设定出处截图或官方公开资料链接。若涉及商业合作，编辑部会协助对接版权方，确保内容合规后再发布。</p>
+        </details>
+        <details>
+          <summary>没有专业设备可以参与吗？</summary>
+          <p>可以。入门阶段用手机配合自然光就能完成练习，重点在角色资料核对与姿态训练。官网的《三步定妆法》与《姿态训练课》都给出了低设备成本的执行方案。</p>
+        </details>
+        <details>
+          <summary>成片审片一般需要多久？</summary>
+          <p>常规审片约 3 个工作日，专题投稿在集中排期时约 5 个工作日。审片意见会具体到时间点与镜头，方便创作者修改后再次提交。</p>
+        </details>
+        <details>
+          <summary>观看需要注册账号吗？</summary>
+          <p>官网焦点内容与图文索引均可直接观看，无需注册。收藏、评论与投稿等互动功能需要登录，方便同步你的记录与作品数据。</p>
+        </details>
+        <details>
+          <summary>12 月创意挑战赛的报名方式？</summary>
+          <p>通过页头或正文的投稿入口提交报名表，注明参与「白水以外」主题，并附一份不超过 300 字的创意说明。报名截止后一周内公布入选名单。</p>
+        </details>
+        <details>
+          <summary>可以申请使用官方摄影棚吗？</summary>
+          <p>签约创作者可按排期申请棚内档期，非签约同好可通过每月开放的公开日体验。棚内布光模板与道具清单均在官网公开，方便提前准备。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="bw-foot">
+  <div class="bw-wrap">
+    <div class="bw-foot-grid">
+      <div class="bw-foot-brand">
+        <div class="bw-logo">
+          <span class="bw-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M20 46 L32 14 L44 46 Z" fill="none" stroke="#ff5c8a" stroke-width="5" stroke-linejoin="round"/><circle cx="32" cy="33" r="5" fill="#ffe066"/></svg>
+          </span>
+          <span class="bw-logo-txt"><strong>白水影社</strong><small>BAISHUI STUDIO</small></span>
+        </div>
+        <p>白水影社官方网站 · 专注 cos被焯出白水 主题的原创视频品牌。深耕二次元角色演绎垂直领域，持续运营正版高清精品内容，与创作者共建值得信赖的内容生态。用户至上，匠心打磨每一部作品。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#bwVideos">精品内容</a></li>
+          <li><a href="#bwTopics">专题企划</a></li>
+          <li><a href="#bwIndex">图文索引</a></li>
+          <li><a href="#bwBoard">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#bwCreators">创作者名录</a></li>
+          <li><a href="#bwNews">企业动态</a></li>
+          <li><a href="#bwFaq">帮助中心</a></li>
+          <li><a href="#top">返回顶部</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>合作邮箱：hello@baishui-studio.cn</li>
+          <li>投稿咨询：submit@baishui-studio.cn</li>
+          <li>工作时间：周一至周五 10:00-19:00</li>
+          <li>办公地址：影棚区南巷 7 号白水片场</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bw-foot-bottom">
+      <span>© 2026 白水影社 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：沪ICP备2026XXXXXX号 · 品牌内容均标注出处，尊重原创与正版</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹窗：投稿 -->
+<div class="bw-modal" id="bwSubmitModal" role="dialog" aria-modal="true" aria-labelledby="bwSubmitTitle">
+  <div class="bw-modal-card">
+    <button class="bw-modal-close" type="button" data-bw-close aria-label="关闭">×</button>
+    <h3 id="bwSubmitTitle">投稿 / 报名入口</h3>
+    <p>请填写基本信息，编辑部将在 3 个工作日内与你联系。提交即表示同意官网内容规范与正版授权要求。</p>
+    <input class="bw-field" type="text" id="bwSubmitName" placeholder="你的昵称 / 创作者名">
+    <input class="bw-field" type="text" id="bwSubmitTopic" placeholder="作品主题（如：白水之下 第 13 期）">
+    <textarea class="bw-field" id="bwSubmitDesc" rows="3" placeholder="200 字以内创作说明"></textarea>
+    <button class="bw-btn bw-btn-pink" type="button" id="bwSubmitSend">提交投稿</button>
+  </div>
+</div>
+
+<!-- 弹窗：反馈 -->
+<div class="bw-modal" id="bwReportModal" role="dialog" aria-modal="true" aria-labelledby="bwReportTitle">
+  <div class="bw-modal-card">
+    <button class="bw-modal-close" type="button" data-bw-close aria-label="关闭">×</button>
+    <h3 id="bwReportTitle">内容反馈</h3>
+    <p>如发现设定标注有误、画面问题或授权疑义，请告诉我们具体内容，我们会尽快核查。</p>
+    <textarea class="bw-field" id="bwReportText" rows="4" placeholder="请描述具体问题"></textarea>
+    <button class="bw-btn bw-btn-pink" type="button" id="bwReportSend">提交反馈</button>
+  </div>
+</div>
+
+<!-- 弹窗：作者资料 -->
+<div class="bw-modal" id="bwAuthorModal" role="dialog" aria-modal="true" aria-labelledby="bwAuthorTitle">
+  <div class="bw-modal-card">
+    <button class="bw-modal-close" type="button" data-bw-close aria-label="关闭">×</button>
+    <h3 id="bwAuthorTitle">作者资料</h3>
+    <p id="bwAuthorBody">资料加载中……</p>
+  </div>
+</div>
+
+<div class="bw-toast" id="bwToast" role="status" aria-live="polite"></div>
+<button class="bw-top-btn" id="bwTopBtn" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var toastEl = document.getElementById('bwToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('on');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('on'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('bwBurger');
+  var nav = document.getElementById('bwNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+  });
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('bwSearchForm');
+  var searchInput = document.getElementById('bwSearchInput');
+  var msgEl = document.createElement('div');
+  msgEl.className = 'bw-search-msg';
+  searchForm.parentNode.insertBefore(msgEl, searchForm);
+  var searchTargets = [
+    {el: document.getElementById('bwVideoList'), name:'精品内容'},
+    {el: document.getElementById('bwCreators'), name:'创作者'},
+    {el: document.getElementById('bwTopics'), name:'专题企划'},
+    {el: document.getElementById('bwIndex'), name:'图文索引'},
+    {el: document.getElementById('bwFaq'), name:'帮助中心'}
+  ];
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    if(!q){ msgEl.classList.remove('on'); return; }
+    var hit = [];
+    searchTargets.forEach(function(t){
+      if(t.el && t.el.textContent.indexOf(q) > -1){ hit.push(t.name); }
+    });
+    if(hit.length){
+      msgEl.textContent = '已找到与「' + q + '」相关板块：' + hit.join('、') + '，点击上方导航可快速跳转。';
+      msgEl.classList.add('on');
+      toast('已为你标出相关板块');
+    }else{
+      msgEl.textContent = '暂未找到「' + q + '」相关内容，可尝试搜索「妆造」「布光」「姿态」或作者名。';
+      msgEl.classList.add('on');
+    }
+  });
+
+  /* 点赞 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-bw-like]');
+    if(likeBtn){
+      var liked = likeBtn.classList.toggle('liked');
+      var b = likeBtn.querySelector('b');
+      if(b){
+        var raw = b.textContent.replace(/[^0-9.]/g,'');
+        var num = parseFloat(raw) || 0;
+        var isWan = /万/.test(b.textContent);
+        var next = liked ? num + (isWan ? 0.1 : 1) : num - (isWan ? 0.1 : 1);
+        if(next < 0) next = 0;
+        b.textContent = (isWan ? next.toFixed(1) : Math.round(next)) + (isWan ? '万' : '');
+      }
+      toast(liked ? '已点赞，感谢支持原创内容' : '已取消点赞');
+      return;
+    }
+    var saveBtn = e.target.closest('[data-bw-save]');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('saved');
+      saveBtn.textContent = saved ? '♥ 已收藏' : '♡ 收藏';
+      toast(saved ? '已收藏，可在个人中心查看' : '已取消收藏');
+      return;
+    }
+    var copyBtn = e.target.closest('[data-bw-copy]');
+    if(copyBtn){
+      var text = '白水影社 · cos被焯出白水 精品内容：' + (document.querySelector('.bw-feature-body h3') ? document.querySelector('.bw-feature-body h3').textContent : '');
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){ toast('链接已复制'); }).catch(function(){ toast('复制失败，请手动复制'); });
+      }else{
+        toast('当前环境不支持自动复制');
+      }
+      return;
+    }
+    var authorBtn = e.target.closest('[data-bw-author]');
+    if(authorBtn){
+      var name = authorBtn.getAttribute('data-bw-author');
+      var card = authorBtn.closest('.bw-author');
+      var role = card.querySelector('.bw-role') ? card.querySelector('.bw-role').textContent : '';
+      var desc = card.querySelector('p') ? card.querySelector('p').textContent : '';
+      var nums = card.querySelector('.bw-author-nums') ? card.querySelector('.bw-author-nums').textContent : '';
+      document.getElementById('bwAuthorTitle').textContent = name + ' · 创作者资料';
+      document.getElementById('bwAuthorBody').innerHTML = '<strong>' + role + '</strong><br><br>' + desc + '<br><br>' + nums;
+      document.getElementById('bwAuthorModal').classList.add('on');
+      return;
+    }
+    var openModal = e.target.closest('[data-bw-modal]');
+    if(openModal){
+      var id = openModal.getAttribute('data-bw-modal');
+      var m = document.getElementById(id);
+      if(m) m.classList.add('on');
+      return;
+    }
+    if(e.target.closest('[data-bw-close]') || e.target.classList.contains('bw-modal')){
+      var modals = document.querySelectorAll('.bw-modal.on');
+      for(var i=0;i<modals.length;i++) modals[i].classList.remove('on');
+    }
+  });
+
+  /* 投稿提交 */
+  document.getElementById('bwSubmitSend').addEventListener('click', function(){
+    var n = document.getElementById('bwSubmitName').value.trim();
+    var t = document.getElementById('bwSubmitTopic').value.trim();
+    if(!n || !t){ toast('请填写昵称与作品主题'); return; }
+    document.getElementById('bwSubmitModal').classList.remove('on');
+    toast('投稿已提交，编辑部将在 3 个工作日内联系你');
+    document.getElementById('bwSubmitName').value = '';
+    document.getElementById('bwSubmitTopic').value = '';
+    document.getElementById('bwSubmitDesc').value = '';
+  });
+
+  /* 反馈提交 */
+  document.getElementById('bwReportSend').addEventListener('click', function(){
+    var txt = document.getElementById('bwReportText').value.trim();
+    if(!txt){ toast('请填写反馈内容'); return; }
+    document.getElementById('bwReportModal').classList.remove('on');
+    document.getElementById('bwReportText').value = '';
+    toast('反馈已收到，感谢你帮助社区变得更好');
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('.bw-count');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-bw-target'), 10) || 0;
+      var start = 0, dur = 900, t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(start + (target - start) * eased);
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) runCounters(); });
+    }, {threshold:0.3});
+    var heroStats = document.querySelector('.bw-stats');
+    if(heroStats) io.observe(heroStats);
+  }else{ runCounters(); }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('bwTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520) topBtn.classList.add('on');
+    else topBtn.classList.remove('on');
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* Esc 关闭弹窗 */
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      var modals = document.querySelectorAll('.bw-modal.on');
+      for(var i=0;i<modals.length;i++) modals[i].classList.remove('on');
+    }
+  });
+})();
+</script>
+</body>
+  </html>
